@@ -1,13 +1,13 @@
 {
   "name": "placeholder-counter",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "license": "Apache-2.0",
   "scripts": {
     "build": "devpulse-addon build .",
     "test": "devpulse-addon build . && devpulse-addon test .",
-    "package": "devpulse-addon build . && devpulse-addon pack . --output=dist/"
+    "package": "devpulse-addon build . && devpulse-addon test . && devpulse-addon pack . --output=dist/"
   },
   "devDependencies": {
     "devpulse-addon-sdk-v2": "file:../sdk/devpulse-addon-sdk-v2-0.18.0.tgz"

@@ -7,7 +7,7 @@ runPackage({
   widgets: ['counter'],
   render: () => ({
     label: `Clicks: ${String(count)}`,
-    tooltip: 'Click to count',
+    tooltip: { title: 'Click to count', rows: [] },
     primary: { kind: 'action', action: { actionId: 'increment' } },
     contextMenu: null,
     presentation: {
