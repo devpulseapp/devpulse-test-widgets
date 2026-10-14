@@ -2,7 +2,7 @@
   "apiVersion": 2,
   "manifestVersion": 2,
   "id": "placeholder.counter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "Placeholder Counter",
   "description": "A placeholder Widget for testing the DevPulse Marketplace: click to count.",
   "category": "tool",
