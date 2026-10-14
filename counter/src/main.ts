@@ -6,7 +6,7 @@ let count = 0;
 runPackage({
   widgets: ['counter'],
   render: () => ({
-    label: `Count ${String(count)}`,
+    label: `Clicks: ${String(count)}`,
     tooltip: 'Click to count',
     primary: { kind: 'action', action: { actionId: 'increment' } },
     contextMenu: null,
@@ -14,7 +14,7 @@ runPackage({
       kind: 'board',
       rows: 1,
       columns: 1,
-      cells: [{ label: `Count ${String(count)}`, mark: null, action: { actionId: 'increment' }, highlighted: false }],
+      cells: [{ label: `Clicks: ${String(count)}`, mark: null, action: { actionId: 'increment' }, highlighted: false }],
       participants: [],
       finished: null,
     },

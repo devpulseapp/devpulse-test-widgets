@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0 — 2026-10-15
+
+- The cell reads “Clicks: 3” instead of “Count 3”.
+
 ## 0.2.0 — 2026-10-15
 
 - The cell's tooltip says what a click does.
