@@ -1,0 +1,38 @@
+{
+  "apiVersion": 2,
+  "manifestVersion": 2,
+  "id": "placeholder.counter",
+  "version": "0.1.0",
+  "displayName": "Placeholder Counter",
+  "description": "A placeholder Widget for testing the DevPulse Marketplace: click to count.",
+  "category": "tool",
+  "publisher": { "id": "placeholder", "displayName": "Marketplace test placeholder" },
+  "authors": [{ "name": "Marketplace test placeholder" }],
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "readme": "README.md",
+  "defaultLocale": "en",
+  "locales": [],
+  "engines": { "devpulse": ">=0.0.1 <1.0.0" },
+  "target": { "platform": "any", "architecture": "any" },
+  "apiFeatures": { "required": ["contributions.widget-v1", "widgets.board-v1"], "optional": [] },
+  "runtime": { "id": "main", "tier": "restricted-javascript", "artifact": "javascript-es2020", "entrypoint": "runtime/main.js", "protocol": "devpulse-addon-runtime/v1" },
+  "contributes": [
+    {
+      "id": "counter",
+      "type": "widget",
+      "displayName": "Placeholder Counter",
+      "description": "Counts clicks.",
+      "placement": "titlebar-right",
+      "icon": "grid",
+      "presentation": "board",
+      "actions": [{ "id": "increment", "description": "Add one to the count." }],
+      "permissionIds": [],
+      "settingIds": [],
+      "requirementIds": []
+    }
+  ],
+  "permissions": [],
+  "requirements": [],
+  "settings": []
+}
