@@ -5,6 +5,6 @@
   "description": "Placeholder Widgets for testing the DevPulse Marketplace. Temporary: deleted when the Marketplace goes live.",
   "workspaces": ["counter"],
   "devDependencies": {
-    "devpulse-addon-sdk-v2": "file:sdk/devpulse-addon-sdk-v2-0.17.0.tgz"
+    "devpulse-addon-sdk-v2": "file:sdk/devpulse-addon-sdk-v2-0.18.0.tgz"
   }
 }
