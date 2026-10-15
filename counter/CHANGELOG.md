@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.0 — 2026-10-15
+
+- A test release for the add-on updates notification; nothing else changed.
+
 ## 0.5.0 — 2026-10-15
 
 - The cell shows the count (0–99). Before, it only went to screen readers, so the Widget looked like an empty square.
