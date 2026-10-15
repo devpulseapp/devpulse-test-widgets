@@ -14,7 +14,8 @@ runPackage({
       kind: 'board',
       rows: 1,
       columns: 1,
-      cells: [{ label: `Clicks: ${String(count)}`, mark: null, action: { actionId: 'increment' }, highlighted: false }],
+      // A mark is at most two characters, so the cell shows 0–99 and stays at 99 after that.
+      cells: [{ label: `Clicks: ${String(count)}`, mark: { text: String(Math.min(count, 99)), tone: 'primary' }, action: { actionId: 'increment' }, highlighted: false }],
       participants: [],
       finished: null,
     },
