@@ -1,0 +1,67 @@
+{
+  "apiVersion": 2,
+  "manifestVersion": 2,
+  "id": "placeholder.large",
+  "version": "0.1.0",
+  "displayName": "Placeholder Large",
+  "description": "A placeholder Widget of about 6 MB for testing the Marketplace's download progress.",
+  "category": "tool",
+  "publisher": {
+    "id": "placeholder",
+    "displayName": "Marketplace test placeholder"
+  },
+  "authors": [
+    {
+      "name": "Marketplace test placeholder"
+    }
+  ],
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "readme": "README.md",
+  "defaultLocale": "en",
+  "locales": [],
+  "engines": {
+    "devpulse": ">=0.0.1 <1.0.0"
+  },
+  "target": {
+    "platform": "any",
+    "architecture": "any"
+  },
+  "apiFeatures": {
+    "required": [
+      "contributions.widget-v1",
+      "widgets.board-v1"
+    ],
+    "optional": []
+  },
+  "runtime": {
+    "id": "main",
+    "tier": "restricted-javascript",
+    "artifact": "javascript-es2020",
+    "entrypoint": "runtime/main.js",
+    "protocol": "devpulse-addon-runtime/v1"
+  },
+  "contributes": [
+    {
+      "id": "cell",
+      "type": "widget",
+      "displayName": "Placeholder Large",
+      "description": "A placeholder Widget of about 6 MB for testing the Marketplace's download progress.",
+      "placement": "titlebar-right",
+      "icon": "grid",
+      "presentation": "board",
+      "actions": [
+        {
+          "id": "press",
+          "description": "Press the cell."
+        }
+      ],
+      "permissionIds": [],
+      "settingIds": [],
+      "requirementIds": []
+    }
+  ],
+  "permissions": [],
+  "requirements": [],
+  "settings": []
+}

@@ -1,0 +1,67 @@
+{
+  "apiVersion": 2,
+  "manifestVersion": 2,
+  "id": "placeholder.update-check",
+  "version": "0.2.0",
+  "displayName": "Placeholder Update Check",
+  "description": "A placeholder Widget for testing an update: install the local 0.1.0 file, and the Marketplace offers 0.2.0.",
+  "category": "tool",
+  "publisher": {
+    "id": "placeholder",
+    "displayName": "Marketplace test placeholder"
+  },
+  "authors": [
+    {
+      "name": "Marketplace test placeholder"
+    }
+  ],
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "readme": "README.md",
+  "defaultLocale": "en",
+  "locales": [],
+  "engines": {
+    "devpulse": ">=0.0.1 <1.0.0"
+  },
+  "target": {
+    "platform": "any",
+    "architecture": "any"
+  },
+  "apiFeatures": {
+    "required": [
+      "contributions.widget-v1",
+      "widgets.board-v1"
+    ],
+    "optional": []
+  },
+  "runtime": {
+    "id": "main",
+    "tier": "restricted-javascript",
+    "artifact": "javascript-es2020",
+    "entrypoint": "runtime/main.js",
+    "protocol": "devpulse-addon-runtime/v1"
+  },
+  "contributes": [
+    {
+      "id": "cell",
+      "type": "widget",
+      "displayName": "Placeholder Update Check",
+      "description": "A placeholder Widget for testing an update: install the local 0.1.0 file, and the Marketplace offers 0.2.0.",
+      "placement": "titlebar-right",
+      "icon": "grid",
+      "presentation": "board",
+      "actions": [
+        {
+          "id": "press",
+          "description": "Press the cell."
+        }
+      ],
+      "permissionIds": [],
+      "settingIds": [],
+      "requirementIds": []
+    }
+  ],
+  "permissions": [],
+  "requirements": [],
+  "settings": []
+}
