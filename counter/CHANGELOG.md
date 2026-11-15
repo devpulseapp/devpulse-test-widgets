@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.0 — 2026-11-15
+
+- A test release with a recorded demo and its demo file, for the Marketplace's demos.
+
 ## 0.6.0 — 2026-10-15
 
 - A test release for the add-on updates notification; nothing else changed.
